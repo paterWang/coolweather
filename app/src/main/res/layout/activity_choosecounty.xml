@@ -3,19 +3,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-<TextView
-    android:id="@+id/tv_country"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:textColor="#fff"
-    android:text="中国"
-    android:textSize="20dp"
-    android:gravity="center"
-    android:background="@color/colorPrimary"
-    />
+
+    <RelativeLayout
+
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageButton
+            android:id="@+id/ibt_goback"
+            android:layout_marginLeft="10dp"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_back"
+            />
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="中国"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
     <ListView
         android:id="@+id/lv_city"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
+        android:layout_height="match_parent"></ListView>
 </LinearLayout>
